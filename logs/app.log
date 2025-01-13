@@ -1,0 +1,1770 @@
+2025-01-06 13:58:05 - Starting DemoApplication using Java 21.0.5 with PID 43190 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-06 13:58:05 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-06 13:58:05 - No active profile set, falling back to 1 default profile: "default"
+2025-01-06 13:58:05 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-06 13:58:05 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-06 13:58:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-06 13:58:05 - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2025-01-06 13:58:05 - Tomcat initialized with port 8080 (http)
+2025-01-06 13:58:05 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-06 13:58:05 - Starting service [Tomcat]
+2025-01-06 13:58:05 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-06 13:58:05 - Initializing Spring embedded WebApplicationContext
+2025-01-06 13:58:05 - Root WebApplicationContext: initialization completed in 651 ms
+2025-01-06 13:58:05 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-06 13:58:05 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-06 13:58:05 - HHH000026: Second-level cache disabled
+2025-01-06 13:58:05 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-06 13:58:05 - HikariPool-1 - Starting...
+2025-01-06 13:58:06 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@dbe323f
+2025-01-06 13:58:06 - HikariPool-1 - Start completed.
+2025-01-06 13:58:06 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-06 13:58:06 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-06 13:58:06 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-06 13:58:06 - SQL Warning Code: 0, SQLState: 00000
+2025-01-06 13:58:06 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-06 13:58:06 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-06 13:58:06 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-06 13:58:06 - LiveReload server is running on port 35729
+2025-01-06 13:58:06 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-06 13:58:06 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-06 13:58:06 - Started DemoApplication in 2.019 seconds (process running for 2.447)
+2025-01-06 13:58:11 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-06 13:58:11 - Initializing Servlet 'dispatcherServlet'
+2025-01-06 13:58:11 - Completed initialization in 1 ms
+2025-01-06 13:58:57 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-06 13:58:57 - Graceful shutdown complete
+2025-01-06 13:58:57 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-06 13:58:57 - HikariPool-1 - Shutdown initiated...
+2025-01-06 13:58:57 - HikariPool-1 - Shutdown completed.
+2025-01-06 13:59:18 - Starting DemoApplication using Java 21.0.5 with PID 47271 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-06 13:59:18 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-06 13:59:18 - No active profile set, falling back to 1 default profile: "default"
+2025-01-06 13:59:18 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-06 13:59:18 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-06 13:59:19 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-06 13:59:19 - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2025-01-06 13:59:19 - Tomcat initialized with port 8080 (http)
+2025-01-06 13:59:19 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-06 13:59:19 - Starting service [Tomcat]
+2025-01-06 13:59:19 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-06 13:59:19 - Initializing Spring embedded WebApplicationContext
+2025-01-06 13:59:19 - Root WebApplicationContext: initialization completed in 670 ms
+2025-01-06 13:59:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-06 13:59:19 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-06 13:59:19 - HHH000026: Second-level cache disabled
+2025-01-06 13:59:19 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-06 13:59:19 - HikariPool-1 - Starting...
+2025-01-06 13:59:19 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@403bfaa9
+2025-01-06 13:59:19 - HikariPool-1 - Start completed.
+2025-01-06 13:59:19 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-06 13:59:19 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-06 13:59:20 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-06 13:59:20 - SQL Warning Code: 0, SQLState: 00000
+2025-01-06 13:59:20 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-06 13:59:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-06 13:59:20 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-06 13:59:20 - LiveReload server is running on port 35729
+2025-01-06 13:59:20 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-06 13:59:20 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-06 13:59:20 - Started DemoApplication in 2.085 seconds (process running for 2.335)
+2025-01-06 13:59:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-06 13:59:24 - Initializing Servlet 'dispatcherServlet'
+2025-01-06 13:59:24 - Completed initialization in 5 ms
+2025-01-06 14:00:12 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-06 14:00:12 - Graceful shutdown complete
+2025-01-06 14:00:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-06 14:00:12 - HikariPool-1 - Shutdown initiated...
+2025-01-06 14:00:12 - HikariPool-1 - Shutdown completed.
+2025-01-06 14:00:14 - Starting DemoApplication using Java 21.0.5 with PID 50269 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-06 14:00:14 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-06 14:00:14 - No active profile set, falling back to 1 default profile: "default"
+2025-01-06 14:00:14 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-06 14:00:14 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-06 14:00:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-06 14:00:14 - Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2025-01-06 14:00:15 - Tomcat initialized with port 8080 (http)
+2025-01-06 14:00:15 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-06 14:00:15 - Starting service [Tomcat]
+2025-01-06 14:00:15 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-06 14:00:15 - Initializing Spring embedded WebApplicationContext
+2025-01-06 14:00:15 - Root WebApplicationContext: initialization completed in 758 ms
+2025-01-06 14:00:15 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-06 14:00:15 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-06 14:00:15 - HHH000026: Second-level cache disabled
+2025-01-06 14:00:15 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-06 14:00:15 - HikariPool-1 - Starting...
+2025-01-06 14:00:15 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54f5fa8
+2025-01-06 14:00:15 - HikariPool-1 - Start completed.
+2025-01-06 14:00:15 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-06 14:00:15 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-06 14:00:15 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-06 14:00:15 - SQL Warning Code: 0, SQLState: 00000
+2025-01-06 14:00:15 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-06 14:00:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-06 14:00:15 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-06 14:00:16 - LiveReload server is running on port 35729
+2025-01-06 14:00:16 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-06 14:00:16 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-06 14:00:16 - Started DemoApplication in 2.091 seconds (process running for 2.353)
+2025-01-06 14:00:21 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-06 14:00:21 - Graceful shutdown complete
+2025-01-06 14:00:21 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-06 14:00:21 - HikariPool-1 - Shutdown initiated...
+2025-01-06 14:00:21 - HikariPool-1 - Shutdown completed.
+2025-01-06 14:00:27 - Starting DemoApplication using Java 21.0.5 with PID 51061 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-06 14:00:27 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-06 14:00:27 - No active profile set, falling back to 1 default profile: "default"
+2025-01-06 14:00:27 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-06 14:00:27 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-06 14:00:27 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-06 14:00:27 - Finished Spring Data repository scanning in 123 ms. Found 1 JPA repository interface.
+2025-01-06 14:00:27 - Tomcat initialized with port 8080 (http)
+2025-01-06 14:00:27 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-06 14:00:27 - Starting service [Tomcat]
+2025-01-06 14:00:27 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-06 14:00:27 - Initializing Spring embedded WebApplicationContext
+2025-01-06 14:00:27 - Root WebApplicationContext: initialization completed in 772 ms
+2025-01-06 14:00:28 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-06 14:00:28 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-06 14:00:28 - HHH000026: Second-level cache disabled
+2025-01-06 14:00:28 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-06 14:00:28 - HikariPool-1 - Starting...
+2025-01-06 14:00:28 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@431bff18
+2025-01-06 14:00:28 - HikariPool-1 - Start completed.
+2025-01-06 14:00:28 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-06 14:00:28 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-06 14:00:28 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-06 14:00:28 - SQL Warning Code: 0, SQLState: 00000
+2025-01-06 14:00:28 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-06 14:00:28 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-06 14:00:28 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-06 14:00:29 - LiveReload server is running on port 35729
+2025-01-06 14:00:29 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-06 14:00:29 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-06 14:00:29 - Started DemoApplication in 2.125 seconds (process running for 2.357)
+2025-01-06 14:00:39 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-06 14:00:39 - Graceful shutdown complete
+2025-01-06 14:00:39 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-06 14:00:39 - HikariPool-1 - Shutdown initiated...
+2025-01-06 14:00:39 - HikariPool-1 - Shutdown completed.
+2025-01-07 11:25:34 - Starting DemoApplication using Java 21.0.5 with PID 422 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-07 11:25:34 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-07 11:25:34 - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 11:25:34 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 11:25:34 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 11:25:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 11:25:35 - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2025-01-07 11:25:35 - Tomcat initialized with port 8080 (http)
+2025-01-07 11:25:35 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-07 11:25:35 - Starting service [Tomcat]
+2025-01-07 11:25:35 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-07 11:25:35 - Initializing Spring embedded WebApplicationContext
+2025-01-07 11:25:35 - Root WebApplicationContext: initialization completed in 780 ms
+2025-01-07 11:25:35 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 11:25:35 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-07 11:25:35 - HHH000026: Second-level cache disabled
+2025-01-07 11:25:35 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-07 11:25:35 - HikariPool-1 - Starting...
+2025-01-07 11:25:35 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3baa51cc
+2025-01-07 11:25:35 - HikariPool-1 - Start completed.
+2025-01-07 11:25:35 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-07 11:25:35 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-07 11:25:36 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-07 11:25:36 - SQL Warning Code: 0, SQLState: 00000
+2025-01-07 11:25:36 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-07 11:25:36 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 11:25:36 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 11:25:36 - LiveReload server is running on port 35729
+2025-01-07 11:25:36 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-07 11:25:36 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-07 11:25:36 - Started DemoApplication in 2.338 seconds (process running for 2.592)
+2025-01-07 11:25:39 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-07 11:25:39 - Graceful shutdown complete
+2025-01-07 11:25:39 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 11:25:39 - HikariPool-1 - Shutdown initiated...
+2025-01-07 11:25:39 - HikariPool-1 - Shutdown completed.
+2025-01-08 11:43:52 - Starting DemoApplication using Java 21.0.5 with PID 16638 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-08 11:43:52 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-08 11:43:52 - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 11:43:52 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 11:43:52 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 11:43:52 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 11:43:52 - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2025-01-08 11:43:52 - Tomcat initialized with port 8080 (http)
+2025-01-08 11:43:52 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-08 11:43:52 - Starting service [Tomcat]
+2025-01-08 11:43:52 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08 11:43:52 - Initializing Spring embedded WebApplicationContext
+2025-01-08 11:43:52 - Root WebApplicationContext: initialization completed in 874 ms
+2025-01-08 11:43:53 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 11:43:53 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08 11:43:53 - HHH000026: Second-level cache disabled
+2025-01-08 11:43:53 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 11:43:53 - HikariPool-1 - Starting...
+2025-01-08 11:43:53 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4210c539
+2025-01-08 11:43:53 - HikariPool-1 - Start completed.
+2025-01-08 11:43:53 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08 11:43:53 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08 11:43:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08 11:43:53 - SQL Warning Code: 0, SQLState: 00000
+2025-01-08 11:43:53 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-08 11:43:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 11:43:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 11:43:54 - LiveReload server is running on port 35729
+2025-01-08 11:43:54 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-08 11:43:54 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-08 11:43:54 - Started DemoApplication in 2.275 seconds (process running for 2.57)
+2025-01-08 11:44:23 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08 11:44:23 - Initializing Servlet 'dispatcherServlet'
+2025-01-08 11:44:23 - Completed initialization in 2 ms
+2025-01-08 11:45:08 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-08 11:45:08 - Graceful shutdown complete
+2025-01-08 11:45:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 11:45:08 - HikariPool-1 - Shutdown initiated...
+2025-01-08 11:45:08 - HikariPool-1 - Shutdown completed.
+2025-01-08 11:45:12 - Starting DemoApplication using Java 21.0.5 with PID 23054 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-08 11:45:12 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-08 11:45:12 - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 11:45:12 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 11:45:12 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 11:45:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 11:45:12 - Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2025-01-08 11:45:12 - Tomcat initialized with port 8080 (http)
+2025-01-08 11:45:12 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-08 11:45:12 - Starting service [Tomcat]
+2025-01-08 11:45:12 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08 11:45:12 - Initializing Spring embedded WebApplicationContext
+2025-01-08 11:45:12 - Root WebApplicationContext: initialization completed in 697 ms
+2025-01-08 11:45:12 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 11:45:12 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08 11:45:12 - HHH000026: Second-level cache disabled
+2025-01-08 11:45:13 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 11:45:13 - HikariPool-1 - Starting...
+2025-01-08 11:45:13 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a9eeaf9
+2025-01-08 11:45:13 - HikariPool-1 - Start completed.
+2025-01-08 11:45:13 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08 11:45:13 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08 11:45:13 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08 11:45:13 - SQL Warning Code: 0, SQLState: 00000
+2025-01-08 11:45:13 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-08 11:45:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 11:45:13 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 11:45:13 - LiveReload server is running on port 35729
+2025-01-08 11:45:13 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-08 11:45:13 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-08 11:45:13 - Started DemoApplication in 2.131 seconds (process running for 2.385)
+2025-01-08 11:45:25 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08 11:45:25 - Initializing Servlet 'dispatcherServlet'
+2025-01-08 11:45:25 - Completed initialization in 1 ms
+2025-01-08 11:45:35 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-08 11:45:35 - Graceful shutdown complete
+2025-01-08 11:45:35 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 11:45:35 - HikariPool-1 - Shutdown initiated...
+2025-01-08 11:45:35 - HikariPool-1 - Shutdown completed.
+2025-01-08 11:46:04 - Starting DemoApplication using Java 21.0.5 with PID 27475 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-08 11:46:04 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-08 11:46:04 - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 11:46:04 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 11:46:04 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 11:46:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 11:46:05 - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2025-01-08 11:46:05 - Tomcat initialized with port 8080 (http)
+2025-01-08 11:46:05 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-08 11:46:05 - Starting service [Tomcat]
+2025-01-08 11:46:05 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08 11:46:05 - Initializing Spring embedded WebApplicationContext
+2025-01-08 11:46:05 - Root WebApplicationContext: initialization completed in 672 ms
+2025-01-08 11:46:05 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 11:46:05 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08 11:46:05 - HHH000026: Second-level cache disabled
+2025-01-08 11:46:05 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 11:46:05 - HikariPool-1 - Starting...
+2025-01-08 11:46:06 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@570616f2
+2025-01-08 11:46:06 - HikariPool-1 - Start completed.
+2025-01-08 11:46:06 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08 11:46:06 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08 11:46:06 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08 11:46:06 - SQL Warning Code: 0, SQLState: 00000
+2025-01-08 11:46:06 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-08 11:46:06 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 11:46:06 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 11:46:06 - LiveReload server is running on port 35729
+2025-01-08 11:46:06 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-08 11:46:06 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-08 11:46:06 - Started DemoApplication in 2.254 seconds (process running for 2.486)
+2025-01-08 11:46:11 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08 11:46:11 - Initializing Servlet 'dispatcherServlet'
+2025-01-08 11:46:11 - Completed initialization in 1 ms
+2025-01-08 11:46:11 - Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2025-01-08 11:46:14 - Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2025-01-08 11:46:23 - Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2025-01-08 11:46:36 - Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2025-01-08 11:46:37 - Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2025-01-08 11:46:59 - Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2025-01-08 11:46:59 - Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2025-01-08 11:47:05 - Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2025-01-08 11:47:08 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-08 11:47:08 - Graceful shutdown complete
+2025-01-08 11:47:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 11:47:08 - HikariPool-1 - Shutdown initiated...
+2025-01-08 11:47:08 - HikariPool-1 - Shutdown completed.
+2025-01-08 11:47:12 - Starting DemoApplication using Java 21.0.5 with PID 33086 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-08 11:47:12 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-08 11:47:12 - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 11:47:12 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 11:47:12 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 11:47:13 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 11:47:13 - Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2025-01-08 11:47:13 - Tomcat initialized with port 8080 (http)
+2025-01-08 11:47:13 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-08 11:47:13 - Starting service [Tomcat]
+2025-01-08 11:47:13 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08 11:47:13 - Initializing Spring embedded WebApplicationContext
+2025-01-08 11:47:13 - Root WebApplicationContext: initialization completed in 652 ms
+2025-01-08 11:47:13 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 11:47:13 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08 11:47:13 - HHH000026: Second-level cache disabled
+2025-01-08 11:47:13 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 11:47:13 - HikariPool-1 - Starting...
+2025-01-08 11:47:14 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@654742a6
+2025-01-08 11:47:14 - HikariPool-1 - Start completed.
+2025-01-08 11:47:14 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08 11:47:14 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08 11:47:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08 11:47:14 - SQL Warning Code: 0, SQLState: 00000
+2025-01-08 11:47:14 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-08 11:47:14 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 11:47:14 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 11:47:14 - LiveReload server is running on port 35729
+2025-01-08 11:47:14 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-08 11:47:14 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-08 11:47:14 - Started DemoApplication in 2.165 seconds (process running for 2.494)
+2025-01-08 11:47:18 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08 11:47:18 - Initializing Servlet 'dispatcherServlet'
+2025-01-08 11:47:18 - Completed initialization in 1 ms
+2025-01-08 11:47:26 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-08 11:47:26 - Graceful shutdown complete
+2025-01-08 11:47:26 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 11:47:26 - HikariPool-1 - Shutdown initiated...
+2025-01-08 11:47:26 - HikariPool-1 - Shutdown completed.
+2025-01-08 16:57:54 - Starting DemoApplication using Java 21.0.5 with PID 73548 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-08 16:57:54 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-08 16:57:54 - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 16:57:54 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 16:57:54 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 16:57:54 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 16:57:54 - Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2025-01-08 16:57:55 - Tomcat initialized with port 8080 (http)
+2025-01-08 16:57:55 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-08 16:57:55 - Starting service [Tomcat]
+2025-01-08 16:57:55 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08 16:57:55 - Initializing Spring embedded WebApplicationContext
+2025-01-08 16:57:55 - Root WebApplicationContext: initialization completed in 1198 ms
+2025-01-08 16:57:55 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 16:57:55 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08 16:57:55 - HHH000026: Second-level cache disabled
+2025-01-08 16:57:55 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 16:57:55 - HikariPool-1 - Starting...
+2025-01-08 16:57:55 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2da98b12
+2025-01-08 16:57:55 - HikariPool-1 - Start completed.
+2025-01-08 16:57:55 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08 16:57:55 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08 16:57:56 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08 16:57:56 - SQL Warning Code: 0, SQLState: 00000
+2025-01-08 16:57:56 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-08 16:57:56 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 16:57:56 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 16:57:56 - LiveReload server is running on port 35729
+2025-01-08 16:57:56 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-08 16:57:56 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-08 16:57:56 - Started DemoApplication in 2.948 seconds (process running for 3.228)
+2025-01-08 16:58:07 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08 16:58:07 - Initializing Servlet 'dispatcherServlet'
+2025-01-08 16:58:07 - Completed initialization in 7 ms
+2025-01-08 17:04:47 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-08 17:04:47 - Graceful shutdown complete
+2025-01-08 17:04:47 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:04:47 - HikariPool-1 - Shutdown initiated...
+2025-01-08 17:04:47 - HikariPool-1 - Shutdown completed.
+2025-01-08 17:10:00 - Starting DemoApplication using Java 21.0.5 with PID 36741 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-08 17:10:00 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-08 17:10:00 - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 17:10:00 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 17:10:00 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 17:10:01 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 17:10:01 - Finished Spring Data repository scanning in 302 ms. Found 1 JPA repository interface.
+2025-01-08 17:10:01 - Tomcat initialized with port 8080 (http)
+2025-01-08 17:10:01 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-08 17:10:01 - Starting service [Tomcat]
+2025-01-08 17:10:01 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08 17:10:01 - Initializing Spring embedded WebApplicationContext
+2025-01-08 17:10:01 - Root WebApplicationContext: initialization completed in 950 ms
+2025-01-08 17:10:02 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 17:10:02 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08 17:10:02 - HHH000026: Second-level cache disabled
+2025-01-08 17:10:02 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 17:10:02 - HikariPool-1 - Starting...
+2025-01-08 17:10:02 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@47b2152c
+2025-01-08 17:10:02 - HikariPool-1 - Start completed.
+2025-01-08 17:10:02 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08 17:10:02 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08 17:10:02 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08 17:10:02 - SQL Warning Code: 0, SQLState: 00000
+2025-01-08 17:10:02 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-08 17:10:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:10:03 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 17:10:03 - LiveReload server is running on port 35729
+2025-01-08 17:10:03 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-08 17:10:03 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-08 17:10:03 - Started DemoApplication in 2.476 seconds (process running for 2.751)
+2025-01-08 17:10:07 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08 17:10:07 - Initializing Servlet 'dispatcherServlet'
+2025-01-08 17:10:07 - Completed initialization in 1 ms
+2025-01-08 17:10:07 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.ArrayList cannot be cast to class com.example.demo.entity.User (java.util.ArrayList is in module java.base of loader 'bootstrap'; com.example.demo.entity.User is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @79cb5c45)] with root cause
+java.lang.ClassCastException: class java.util.ArrayList cannot be cast to class com.example.demo.entity.User (java.util.ArrayList is in module java.base of loader 'bootstrap'; com.example.demo.entity.User is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @79cb5c45)
+	at com.example.demo.service.UserService.getAllUsers(UserService.java:50)
+	at com.example.demo.controller.UserController.getAllUsers(UserController.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-01-08 17:11:17 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-08 17:11:17 - Graceful shutdown complete
+2025-01-08 17:11:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:11:17 - HikariPool-1 - Shutdown initiated...
+2025-01-08 17:11:17 - HikariPool-1 - Shutdown completed.
+2025-01-08 17:11:20 - Starting DemoApplication using Java 21.0.5 with PID 43747 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-08 17:11:20 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-08 17:11:20 - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 17:11:20 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 17:11:20 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 17:11:21 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 17:11:21 - Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2025-01-08 17:11:21 - Tomcat initialized with port 8080 (http)
+2025-01-08 17:11:21 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-08 17:11:21 - Starting service [Tomcat]
+2025-01-08 17:11:21 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08 17:11:21 - Initializing Spring embedded WebApplicationContext
+2025-01-08 17:11:21 - Root WebApplicationContext: initialization completed in 664 ms
+2025-01-08 17:11:21 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 17:11:21 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08 17:11:21 - HHH000026: Second-level cache disabled
+2025-01-08 17:11:21 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 17:11:21 - HikariPool-1 - Starting...
+2025-01-08 17:11:21 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@9351dfc
+2025-01-08 17:11:21 - HikariPool-1 - Start completed.
+2025-01-08 17:11:21 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08 17:11:21 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08 17:11:22 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08 17:11:22 - SQL Warning Code: 0, SQLState: 00000
+2025-01-08 17:11:22 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-08 17:11:22 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:11:22 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 17:11:22 - LiveReload server is running on port 35729
+2025-01-08 17:11:22 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-08 17:11:22 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-08 17:11:22 - Started DemoApplication in 2.123 seconds (process running for 2.656)
+2025-01-08 17:11:26 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08 17:11:26 - Initializing Servlet 'dispatcherServlet'
+2025-01-08 17:11:26 - Completed initialization in 1 ms
+2025-01-08 17:11:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-08 17:11:54 - Graceful shutdown complete
+2025-01-08 17:11:54 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:11:54 - HikariPool-1 - Shutdown initiated...
+2025-01-08 17:11:54 - HikariPool-1 - Shutdown completed.
+2025-01-08 17:23:27 - Starting DemoApplication using Java 21.0.5 with PID 6509 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-08 17:23:27 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-08 17:23:27 - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 17:23:27 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 17:23:27 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 17:23:27 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 17:23:27 - Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2025-01-08 17:23:28 - Tomcat initialized with port 8080 (http)
+2025-01-08 17:23:28 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-08 17:23:28 - Starting service [Tomcat]
+2025-01-08 17:23:28 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08 17:23:28 - Initializing Spring embedded WebApplicationContext
+2025-01-08 17:23:28 - Root WebApplicationContext: initialization completed in 688 ms
+2025-01-08 17:23:28 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 17:23:28 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08 17:23:28 - HHH000026: Second-level cache disabled
+2025-01-08 17:23:28 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 17:23:28 - HikariPool-1 - Starting...
+2025-01-08 17:23:28 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@50d142db
+2025-01-08 17:23:28 - HikariPool-1 - Start completed.
+2025-01-08 17:23:28 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08 17:23:28 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08 17:23:28 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08 17:23:28 - SQL Warning Code: 0, SQLState: 00000
+2025-01-08 17:23:28 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-08 17:23:28 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:23:29 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 17:23:29 - LiveReload server is running on port 35729
+2025-01-08 17:23:29 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-08 17:23:29 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-08 17:23:29 - Started DemoApplication in 2.206 seconds (process running for 2.461)
+2025-01-08 17:23:35 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08 17:23:35 - Initializing Servlet 'dispatcherServlet'
+2025-01-08 17:23:35 - Completed initialization in 1 ms
+2025-01-08 17:23:41 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-08 17:23:41 - Graceful shutdown complete
+2025-01-08 17:23:41 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:23:41 - HikariPool-1 - Shutdown initiated...
+2025-01-08 17:23:41 - HikariPool-1 - Shutdown completed.
+2025-01-08 17:29:59 - Starting DemoApplication using Java 21.0.5 with PID 40288 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-08 17:29:59 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-08 17:29:59 - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 17:29:59 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 17:29:59 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 17:29:59 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 17:29:59 - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2025-01-08 17:30:00 - Tomcat initialized with port 8080 (http)
+2025-01-08 17:30:00 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-08 17:30:00 - Starting service [Tomcat]
+2025-01-08 17:30:00 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08 17:30:00 - Initializing Spring embedded WebApplicationContext
+2025-01-08 17:30:00 - Root WebApplicationContext: initialization completed in 956 ms
+2025-01-08 17:30:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 17:30:00 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08 17:30:00 - HHH000026: Second-level cache disabled
+2025-01-08 17:30:00 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 17:30:00 - HikariPool-1 - Starting...
+2025-01-08 17:30:00 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11ac19c6
+2025-01-08 17:30:00 - HikariPool-1 - Start completed.
+2025-01-08 17:30:00 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08 17:30:00 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08 17:30:00 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08 17:30:00 - SQL Warning Code: 0, SQLState: 00000
+2025-01-08 17:30:00 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-08 17:30:00 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:30:01 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 17:30:01 - LiveReload server is running on port 35729
+2025-01-08 17:30:01 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-08 17:30:01 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-08 17:30:01 - Started DemoApplication in 2.332 seconds (process running for 2.581)
+2025-01-08 17:30:08 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08 17:30:08 - Initializing Servlet 'dispatcherServlet'
+2025-01-08 17:30:08 - Completed initialization in 2 ms
+2025-01-08 17:30:13 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-08 17:30:13 - Graceful shutdown complete
+2025-01-08 17:30:13 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:30:13 - HikariPool-1 - Shutdown initiated...
+2025-01-08 17:30:13 - HikariPool-1 - Shutdown completed.
+2025-01-08 17:34:57 - Starting DemoApplication using Java 21.0.5 with PID 66013 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-08 17:34:57 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-08 17:34:57 - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 17:34:57 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 17:34:57 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 17:34:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 17:34:57 - Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2025-01-08 17:34:57 - Tomcat initialized with port 8080 (http)
+2025-01-08 17:34:57 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-08 17:34:57 - Starting service [Tomcat]
+2025-01-08 17:34:57 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08 17:34:57 - Initializing Spring embedded WebApplicationContext
+2025-01-08 17:34:57 - Root WebApplicationContext: initialization completed in 691 ms
+2025-01-08 17:34:58 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 17:34:58 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08 17:34:58 - HHH000026: Second-level cache disabled
+2025-01-08 17:34:58 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 17:34:58 - HikariPool-1 - Starting...
+2025-01-08 17:34:58 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2065ac89
+2025-01-08 17:34:58 - HikariPool-1 - Start completed.
+2025-01-08 17:34:58 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08 17:34:58 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08 17:34:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08 17:34:58 - SQL Warning Code: 0, SQLState: 00000
+2025-01-08 17:34:58 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-08 17:34:58 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:34:59 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 17:34:59 - LiveReload server is running on port 35729
+2025-01-08 17:34:59 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-08 17:34:59 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-08 17:34:59 - Started DemoApplication in 2.244 seconds (process running for 2.54)
+2025-01-08 17:35:13 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08 17:35:13 - Initializing Servlet 'dispatcherServlet'
+2025-01-08 17:35:13 - Completed initialization in 1 ms
+2025-01-08 17:35:32 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-08 17:35:32 - Graceful shutdown complete
+2025-01-08 17:35:32 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:35:32 - HikariPool-1 - Shutdown initiated...
+2025-01-08 17:35:32 - HikariPool-1 - Shutdown completed.
+2025-01-08 17:37:29 - Starting DemoApplication using Java 21.0.5 with PID 79083 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-08 17:37:29 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-08 17:37:29 - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 17:37:29 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 17:37:29 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 17:37:29 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 17:37:29 - Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interface.
+2025-01-08 17:37:30 - Tomcat initialized with port 8080 (http)
+2025-01-08 17:37:30 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-08 17:37:30 - Starting service [Tomcat]
+2025-01-08 17:37:30 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08 17:37:30 - Initializing Spring embedded WebApplicationContext
+2025-01-08 17:37:30 - Root WebApplicationContext: initialization completed in 792 ms
+2025-01-08 17:37:30 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 17:37:30 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08 17:37:30 - HHH000026: Second-level cache disabled
+2025-01-08 17:37:30 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 17:37:30 - HikariPool-1 - Starting...
+2025-01-08 17:37:30 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18e2c43d
+2025-01-08 17:37:30 - HikariPool-1 - Start completed.
+2025-01-08 17:37:30 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08 17:37:30 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08 17:37:30 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08 17:37:30 - SQL Warning Code: 0, SQLState: 00000
+2025-01-08 17:37:30 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-08 17:37:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:37:31 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 17:37:31 - LiveReload server is running on port 35729
+2025-01-08 17:37:31 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-08 17:37:31 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-08 17:37:31 - Started DemoApplication in 2.156 seconds (process running for 2.416)
+2025-01-08 17:37:39 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08 17:37:39 - Initializing Servlet 'dispatcherServlet'
+2025-01-08 17:37:39 - Completed initialization in 1 ms
+2025-01-08 17:37:58 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-08 17:37:58 - Graceful shutdown complete
+2025-01-08 17:37:58 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 17:37:58 - HikariPool-1 - Shutdown initiated...
+2025-01-08 17:37:58 - HikariPool-1 - Shutdown completed.
+2025-01-09 13:01:44 - Starting DemoApplication using Java 21.0.5 with PID 99892 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-09 13:01:44 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-09 13:01:44 - No active profile set, falling back to 1 default profile: "default"
+2025-01-09 13:01:44 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-09 13:01:44 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-09 13:01:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-09 13:01:44 - Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
+2025-01-09 13:01:45 - Tomcat initialized with port 8080 (http)
+2025-01-09 13:01:45 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-09 13:01:45 - Starting service [Tomcat]
+2025-01-09 13:01:45 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-09 13:01:45 - Initializing Spring embedded WebApplicationContext
+2025-01-09 13:01:45 - Root WebApplicationContext: initialization completed in 791 ms
+2025-01-09 13:01:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-09 13:01:45 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-09 13:01:45 - HHH000026: Second-level cache disabled
+2025-01-09 13:01:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-09 13:01:45 - HikariPool-1 - Starting...
+2025-01-09 13:01:45 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@64811b35
+2025-01-09 13:01:45 - HikariPool-1 - Start completed.
+2025-01-09 13:01:45 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-09 13:01:45 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-09 13:01:46 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-09 13:01:46 - SQL Warning Code: 0, SQLState: 00000
+2025-01-09 13:01:46 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-09 13:01:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-09 13:01:46 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-09 13:01:46 - LiveReload server is running on port 35729
+2025-01-09 13:01:46 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-09 13:01:46 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-09 13:01:46 - Started DemoApplication in 2.426 seconds (process running for 2.725)
+2025-01-09 13:01:55 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-09 13:01:55 - Initializing Servlet 'dispatcherServlet'
+2025-01-09 13:01:55 - Completed initialization in 0 ms
+2025-01-09 13:01:55 - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-01-09 13:09:20 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-09 13:09:20 - Graceful shutdown complete
+2025-01-09 13:09:20 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-09 13:09:20 - HikariPool-1 - Shutdown initiated...
+2025-01-09 13:09:20 - HikariPool-1 - Shutdown completed.
+2025-01-10 13:46:49 - Starting DemoApplication using Java 21.0.5 with PID 49364 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-10 13:46:49 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-10 13:46:49 - No active profile set, falling back to 1 default profile: "default"
+2025-01-10 13:46:49 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10 13:46:49 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10 13:46:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-10 13:46:49 - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2025-01-10 13:46:49 - Tomcat initialized with port 8080 (http)
+2025-01-10 13:46:49 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-10 13:46:49 - Starting service [Tomcat]
+2025-01-10 13:46:49 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-10 13:46:50 - Initializing Spring embedded WebApplicationContext
+2025-01-10 13:46:50 - Root WebApplicationContext: initialization completed in 836 ms
+2025-01-10 13:46:50 - HikariPool-1 - Starting...
+2025-01-10 13:46:50 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@33fce3fd
+2025-01-10 13:46:50 - HikariPool-1 - Start completed.
+2025-01-10 13:46:50 - Set default schema name to public
+2025-01-10 13:46:50 - Creating database history table with name: public.databasechangelog
+2025-01-10 13:46:50 - Reading from public.databasechangelog
+2025-01-10 13:46:50 - Successfully acquired change log lock
+2025-01-10 13:46:50 - Using deploymentId: 6491610577
+2025-01-10 13:46:50 - Reading from public.databasechangelog
+2025-01-10 13:46:50 - Running Changeset: db/changelog/changes/001-initial-schema.sql::raw::includeAll
+2025-01-10 13:46:50 - ChangeSet db/changelog/changes/001-initial-schema.sql::raw::includeAll encountered an exception.
+liquibase.exception.DatabaseException: ERROR: syntax error at end of input
+  Position: 61 [Failed SQL: (0) CREATE TABLE customer (
+  id INT PRIMARY KEY,
+  name VARCHAR]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:497)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:185)
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:141)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1189)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:776)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:126)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:70)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(ChangeLogIterator.java:131)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(ChangeLogIterator.java:120)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.Scope.child(Scope.java:261)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:89)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:114)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:112)
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:105)
+	at liquibase.command.CommandScope.execute(CommandScope.java:220)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1329)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:305)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:257)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at end of input
+  Position: 61
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:491)
+	... 66 common frames omitted
+2025-01-10 13:46:50 - UPDATE SUMMARY
+2025-01-10 13:46:50 - Run:                          0
+2025-01-10 13:46:50 - Previously run:               0
+2025-01-10 13:46:50 - Filtered out:                 0
+2025-01-10 13:46:50 - -------------------------------
+2025-01-10 13:46:50 - Total change sets:            1
+2025-01-10 13:46:50 - Update summary generated
+2025-01-10 13:46:50 - Update command encountered an exception.
+2025-01-10 13:46:50 - Successfully released change log lock
+2025-01-10 13:46:50 - Logging exception.
+2025-01-10 13:46:50 - ERROR: Exception Details
+2025-01-10 13:46:50 - ERROR: Exception Primary Class:  PSQLException
+2025-01-10 13:46:50 - ERROR: Exception Primary Reason:  ERROR: syntax error at end of input
+  Position: 61
+2025-01-10 13:46:50 - ERROR: Exception Primary Source:  PostgreSQL 15.9 (Homebrew)
+2025-01-10 13:46:50 - Command execution complete
+2025-01-10 13:46:50 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/001-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at end of input
+  Position: 61 [Failed SQL: (0) CREATE TABLE customer (
+  id INT PRIMARY KEY,
+  name VARCHAR]
+2025-01-10 13:46:50 - HikariPool-1 - Shutdown initiated...
+2025-01-10 13:46:50 - HikariPool-1 - Shutdown completed.
+2025-01-10 13:46:50 - Stopping service [Tomcat]
+2025-01-10 13:46:50 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-10 13:46:50 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/001-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at end of input
+  Position: 61 [Failed SQL: (0) CREATE TABLE customer (
+  id INT PRIMARY KEY,
+  name VARCHAR]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/001-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at end of input
+  Position: 61 [Failed SQL: (0) CREATE TABLE customer (
+  id INT PRIMARY KEY,
+  name VARCHAR]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	... 13 common frames omitted
+Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/001-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at end of input
+  Position: 61 [Failed SQL: (0) CREATE TABLE customer (
+  id INT PRIMARY KEY,
+  name VARCHAR]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 20 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/001-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at end of input
+  Position: 61 [Failed SQL: (0) CREATE TABLE customer (
+  id INT PRIMARY KEY,
+  name VARCHAR]
+	at liquibase.command.CommandScope.execute(CommandScope.java:258)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1329)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:305)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:257)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:250)
+	... 22 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/001-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at end of input
+  Position: 61 [Failed SQL: (0) CREATE TABLE customer (
+  id INT PRIMARY KEY,
+  name VARCHAR]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:148)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:114)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:112)
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:105)
+	at liquibase.command.CommandScope.execute(CommandScope.java:220)
+	... 38 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/001-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at end of input
+  Position: 61 [Failed SQL: (0) CREATE TABLE customer (
+  id INT PRIMARY KEY,
+  name VARCHAR]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:820)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:126)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:70)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(ChangeLogIterator.java:131)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(ChangeLogIterator.java:120)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.Scope.child(Scope.java:261)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:89)
+	... 46 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ERROR: syntax error at end of input
+  Position: 61 [Failed SQL: (0) CREATE TABLE customer (
+  id INT PRIMARY KEY,
+  name VARCHAR]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:497)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:185)
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:141)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1189)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:776)
+	... 61 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at end of input
+  Position: 61
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:491)
+	... 66 common frames omitted
+2025-01-10 13:48:06 - Starting DemoApplication using Java 21.0.5 with PID 56945 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-10 13:48:06 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-10 13:48:06 - No active profile set, falling back to 1 default profile: "default"
+2025-01-10 13:48:06 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10 13:48:06 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10 13:48:07 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-10 13:48:07 - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2025-01-10 13:48:07 - Tomcat initialized with port 8080 (http)
+2025-01-10 13:48:07 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-10 13:48:07 - Starting service [Tomcat]
+2025-01-10 13:48:07 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-10 13:48:07 - Initializing Spring embedded WebApplicationContext
+2025-01-10 13:48:07 - Root WebApplicationContext: initialization completed in 705 ms
+2025-01-10 13:48:07 - HikariPool-1 - Starting...
+2025-01-10 13:48:07 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f17cc85
+2025-01-10 13:48:07 - HikariPool-1 - Start completed.
+2025-01-10 13:48:07 - Set default schema name to public
+2025-01-10 13:48:08 - Reading from public.databasechangelog
+2025-01-10 13:48:08 - Successfully acquired change log lock
+2025-01-10 13:48:08 - Using deploymentId: 6491688056
+2025-01-10 13:48:08 - Reading from public.databasechangelog
+2025-01-10 13:48:08 - Running Changeset: db/changelog/changes/001-initial-schema.sql::raw::includeAll
+2025-01-10 13:48:08 - Custom SQL executed
+2025-01-10 13:48:08 - ChangeSet db/changelog/changes/001-initial-schema.sql::raw::includeAll ran successfully in 19ms
+2025-01-10 13:48:08 - UPDATE SUMMARY
+2025-01-10 13:48:08 - Run:                          1
+2025-01-10 13:48:08 - Previously run:               0
+2025-01-10 13:48:08 - Filtered out:                 0
+2025-01-10 13:48:08 - -------------------------------
+2025-01-10 13:48:08 - Total change sets:            1
+2025-01-10 13:48:08 - Update summary generated
+2025-01-10 13:48:08 - Update command completed successfully.
+2025-01-10 13:48:08 - Liquibase: Update has been successful. Rows affected: 1
+2025-01-10 13:48:08 - Successfully released change log lock
+2025-01-10 13:48:08 - Command execution complete
+2025-01-10 13:48:08 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-10 13:48:08 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-10 13:48:08 - HHH000026: Second-level cache disabled
+2025-01-10 13:48:08 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-10 13:48:08 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-10 13:48:08 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-10 13:48:08 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-10 13:48:08 - SQL Warning Code: 0, SQLState: 00000
+2025-01-10 13:48:08 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-10 13:48:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-10 13:48:08 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-10 13:48:09 - LiveReload server is running on port 35729
+2025-01-10 13:48:09 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-10 13:48:09 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-10 13:48:09 - Started DemoApplication in 2.707 seconds (process running for 3.007)
+2025-01-10 13:49:25 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-10 13:49:25 - Graceful shutdown complete
+2025-01-10 13:49:25 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-10 13:49:25 - HikariPool-1 - Shutdown initiated...
+2025-01-10 13:49:25 - HikariPool-1 - Shutdown completed.
+2025-01-10 13:52:09 - Starting DemoApplication using Java 21.0.5 with PID 80669 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-10 13:52:09 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-10 13:52:09 - No active profile set, falling back to 1 default profile: "default"
+2025-01-10 13:52:09 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10 13:52:09 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10 13:52:10 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-10 13:52:10 - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2025-01-10 13:52:10 - Tomcat initialized with port 8080 (http)
+2025-01-10 13:52:10 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-10 13:52:10 - Starting service [Tomcat]
+2025-01-10 13:52:10 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-10 13:52:10 - Initializing Spring embedded WebApplicationContext
+2025-01-10 13:52:10 - Root WebApplicationContext: initialization completed in 892 ms
+2025-01-10 13:52:10 - HikariPool-1 - Starting...
+2025-01-10 13:52:10 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@401d215
+2025-01-10 13:52:10 - HikariPool-1 - Start completed.
+2025-01-10 13:52:10 - Set default schema name to public
+2025-01-10 13:52:10 - Reading from public.databasechangelog
+2025-01-10 13:52:10 - Database is up to date, no changesets to execute
+2025-01-10 13:52:10 - Reading from public.databasechangelog
+2025-01-10 13:52:10 - UPDATE SUMMARY
+2025-01-10 13:52:10 - Run:                          0
+2025-01-10 13:52:10 - Previously run:               1
+2025-01-10 13:52:10 - Filtered out:                 0
+2025-01-10 13:52:10 - -------------------------------
+2025-01-10 13:52:10 - Total change sets:            1
+2025-01-10 13:52:10 - Update summary generated
+2025-01-10 13:52:10 - Command execution complete
+2025-01-10 13:52:11 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-10 13:52:11 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-10 13:52:11 - HHH000026: Second-level cache disabled
+2025-01-10 13:52:11 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-10 13:52:11 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-10 13:52:11 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-10 13:52:11 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-10 13:52:11 - SQL Warning Code: 0, SQLState: 00000
+2025-01-10 13:52:11 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-10 13:52:11 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-10 13:52:11 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-10 13:52:12 - LiveReload server is running on port 35729
+2025-01-10 13:52:12 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-10 13:52:12 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-10 13:52:12 - Started DemoApplication in 2.782 seconds (process running for 3.083)
+2025-01-10 13:57:24 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-10 13:57:24 - Graceful shutdown complete
+2025-01-10 13:57:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-10 13:57:24 - HikariPool-1 - Shutdown initiated...
+2025-01-10 13:57:24 - HikariPool-1 - Shutdown completed.
+2025-01-10 13:57:28 - Starting DemoApplication using Java 21.0.5 with PID 12067 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-10 13:57:28 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-10 13:57:28 - No active profile set, falling back to 1 default profile: "default"
+2025-01-10 13:57:28 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10 13:57:28 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10 13:57:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-10 13:57:28 - Finished Spring Data repository scanning in 266 ms. Found 1 JPA repository interface.
+2025-01-10 13:57:28 - Tomcat initialized with port 8080 (http)
+2025-01-10 13:57:28 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-10 13:57:28 - Starting service [Tomcat]
+2025-01-10 13:57:28 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-10 13:57:28 - Initializing Spring embedded WebApplicationContext
+2025-01-10 13:57:28 - Root WebApplicationContext: initialization completed in 921 ms
+2025-01-10 13:57:29 - HikariPool-1 - Starting...
+2025-01-10 13:57:29 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c0b2f7f
+2025-01-10 13:57:29 - HikariPool-1 - Start completed.
+2025-01-10 13:57:29 - Set default schema name to public
+2025-01-10 13:57:29 - Reading from public.databasechangelog
+2025-01-10 13:57:29 - Database is up to date, no changesets to execute
+2025-01-10 13:57:29 - Reading from public.databasechangelog
+2025-01-10 13:57:29 - UPDATE SUMMARY
+2025-01-10 13:57:29 - Run:                          0
+2025-01-10 13:57:29 - Previously run:               1
+2025-01-10 13:57:29 - Filtered out:                 0
+2025-01-10 13:57:29 - -------------------------------
+2025-01-10 13:57:29 - Total change sets:            1
+2025-01-10 13:57:29 - Update summary generated
+2025-01-10 13:57:29 - Command execution complete
+2025-01-10 13:57:29 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-10 13:57:29 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-10 13:57:29 - HHH000026: Second-level cache disabled
+2025-01-10 13:57:29 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-10 13:57:29 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-10 13:57:29 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-10 13:57:30 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-10 13:57:30 - SQL Warning Code: 0, SQLState: 00000
+2025-01-10 13:57:30 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-10 13:57:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-10 13:57:30 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-10 13:57:30 - LiveReload server is running on port 35729
+2025-01-10 13:57:30 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-10 13:57:30 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-10 13:57:30 - Started DemoApplication in 2.739 seconds (process running for 3.012)
+2025-01-10 13:58:06 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-10 13:58:06 - Graceful shutdown complete
+2025-01-10 13:58:06 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-10 13:58:06 - HikariPool-1 - Shutdown initiated...
+2025-01-10 13:58:06 - HikariPool-1 - Shutdown completed.
+2025-01-10 13:59:13 - Starting DemoApplication using Java 21.0.5 with PID 22359 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-10 13:59:13 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-10 13:59:13 - No active profile set, falling back to 1 default profile: "default"
+2025-01-10 13:59:13 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10 13:59:13 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10 13:59:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-10 13:59:14 - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+2025-01-10 13:59:14 - Tomcat initialized with port 8080 (http)
+2025-01-10 13:59:14 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-10 13:59:14 - Starting service [Tomcat]
+2025-01-10 13:59:14 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-10 13:59:14 - Initializing Spring embedded WebApplicationContext
+2025-01-10 13:59:14 - Root WebApplicationContext: initialization completed in 1007 ms
+2025-01-10 13:59:14 - HikariPool-1 - Starting...
+2025-01-10 13:59:14 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7fee1257
+2025-01-10 13:59:14 - HikariPool-1 - Start completed.
+2025-01-10 13:59:15 - Set default schema name to public
+2025-01-10 13:59:15 - Logging exception.
+2025-01-10 13:59:15 - ERROR: Exception Details
+2025-01-10 13:59:15 - ERROR: Exception Primary Class:  ChangeLogParseException
+2025-01-10 13:59:15 - ERROR: Exception Primary Reason:  The file [classpath:/db/changelog/changes/001-initial-schema.sql, classpath:/db/changelog/changes/002-initial-schema.sql] was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+2025-01-10 13:59:15 - ERROR: Exception Primary Source:  4.29.2
+2025-01-10 13:59:15 - Command execution complete
+2025-01-10 13:59:15 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/db.changelog-master.yaml : The file [classpath:/db/changelog/changes/001-initial-schema.sql, classpath:/db/changelog/changes/002-initial-schema.sql] was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+2025-01-10 13:59:15 - HikariPool-1 - Shutdown initiated...
+2025-01-10 13:59:15 - HikariPool-1 - Shutdown completed.
+2025-01-10 13:59:15 - Stopping service [Tomcat]
+2025-01-10 13:59:15 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-10 13:59:15 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/db.changelog-master.yaml : The file [classpath:/db/changelog/changes/001-initial-schema.sql, classpath:/db/changelog/changes/002-initial-schema.sql] was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/db.changelog-master.yaml : The file [classpath:/db/changelog/changes/001-initial-schema.sql, classpath:/db/changelog/changes/002-initial-schema.sql] was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	... 13 common frames omitted
+Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/db.changelog-master.yaml : The file [classpath:/db/changelog/changes/001-initial-schema.sql, classpath:/db/changelog/changes/002-initial-schema.sql] was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 20 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/db.changelog-master.yaml : The file [classpath:/db/changelog/changes/001-initial-schema.sql, classpath:/db/changelog/changes/002-initial-schema.sql] was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.command.CommandScope.execute(CommandScope.java:258)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1329)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:305)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:257)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:250)
+	... 22 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/db.changelog-master.yaml : The file [classpath:/db/changelog/changes/001-initial-schema.sql, classpath:/db/changelog/changes/002-initial-schema.sql] was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:98)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.lambda$getDatabaseChangeLog$0(DatabaseChangelogCommandStep.java:129)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:176)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:128)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:87)
+	at liquibase.command.CommandScope.execute(CommandScope.java:220)
+	... 38 common frames omitted
+Caused by: liquibase.exception.SetupException: The file [classpath:/db/changelog/changes/001-initial-schema.sql, classpath:/db/changelog/changes/002-initial-schema.sql] was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.changelog.DatabaseChangeLog.handleChildNodeHelper(DatabaseChangeLog.java:514)
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:466)
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:433)
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:92)
+	... 44 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: The file [classpath:/db/changelog/changes/001-initial-schema.sql, classpath:/db/changelog/changes/002-initial-schema.sql] was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:1043)
+	at liquibase.changelog.DatabaseChangeLog.handleChildNodeHelper(DatabaseChangeLog.java:504)
+	... 47 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: The file [classpath:/db/changelog/changes/001-initial-schema.sql, classpath:/db/changelog/changes/002-initial-schema.sql] was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:1005)
+	... 48 common frames omitted
+2025-01-10 14:01:21 - Starting DemoApplication using Java 21.0.5 with PID 35009 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-10 14:01:21 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-10 14:01:21 - No active profile set, falling back to 1 default profile: "default"
+2025-01-10 14:01:21 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10 14:01:21 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10 14:01:21 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-10 14:01:21 - Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2025-01-10 14:01:22 - Tomcat initialized with port 8080 (http)
+2025-01-10 14:01:22 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-10 14:01:22 - Starting service [Tomcat]
+2025-01-10 14:01:22 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-10 14:01:22 - Initializing Spring embedded WebApplicationContext
+2025-01-10 14:01:22 - Root WebApplicationContext: initialization completed in 955 ms
+2025-01-10 14:01:22 - HikariPool-1 - Starting...
+2025-01-10 14:01:22 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15d37bc9
+2025-01-10 14:01:22 - HikariPool-1 - Start completed.
+2025-01-10 14:01:22 - Set default schema name to public
+2025-01-10 14:01:23 - Reading from public.databasechangelog
+2025-01-10 14:01:23 - Successfully acquired change log lock
+2025-01-10 14:01:23 - Using deploymentId: 6492483124
+2025-01-10 14:01:23 - Reading from public.databasechangelog
+2025-01-10 14:01:23 - Running Changeset: db/changelog/changes/002-initial-schema.sql::raw::includeAll
+2025-01-10 14:01:23 - ChangeSet db/changelog/changes/002-initial-schema.sql::raw::includeAll encountered an exception.
+liquibase.exception.DatabaseException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Detail: Key (id)=(1) already exists. [Failed SQL: (0) INSERT INTO users (id, name)
+VALUES (1, 'John Doe')]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:497)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:185)
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:141)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1189)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:776)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:126)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:70)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(ChangeLogIterator.java:131)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(ChangeLogIterator.java:120)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.Scope.child(Scope.java:261)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:89)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:114)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:112)
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:105)
+	at liquibase.command.CommandScope.execute(CommandScope.java:220)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1329)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:305)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:257)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Detail: Key (id)=(1) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:491)
+	... 66 common frames omitted
+2025-01-10 14:01:23 - UPDATE SUMMARY
+2025-01-10 14:01:23 - Run:                          0
+2025-01-10 14:01:23 - Previously run:               1
+2025-01-10 14:01:23 - Filtered out:                 0
+2025-01-10 14:01:23 - -------------------------------
+2025-01-10 14:01:23 - Total change sets:            2
+2025-01-10 14:01:23 - Update summary generated
+2025-01-10 14:01:23 - Update command encountered an exception.
+2025-01-10 14:01:23 - Successfully released change log lock
+2025-01-10 14:01:23 - Logging exception.
+2025-01-10 14:01:23 - ERROR: Exception Details
+2025-01-10 14:01:23 - ERROR: Exception Primary Class:  PSQLException
+2025-01-10 14:01:23 - ERROR: Exception Primary Reason:  ERROR: duplicate key value violates unique constraint "users_pkey"
+  Detail: Key (id)=(1) already exists.
+2025-01-10 14:01:23 - ERROR: Exception Primary Source:  PostgreSQL 15.9 (Homebrew)
+2025-01-10 14:01:23 - Command execution complete
+2025-01-10 14:01:23 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/002-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Detail: Key (id)=(1) already exists. [Failed SQL: (0) INSERT INTO users (id, name)
+VALUES (1, 'John Doe')]
+2025-01-10 14:01:23 - HikariPool-1 - Shutdown initiated...
+2025-01-10 14:01:23 - HikariPool-1 - Shutdown completed.
+2025-01-10 14:01:23 - Stopping service [Tomcat]
+2025-01-10 14:01:23 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-10 14:01:23 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/002-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Detail: Key (id)=(1) already exists. [Failed SQL: (0) INSERT INTO users (id, name)
+VALUES (1, 'John Doe')]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/002-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Detail: Key (id)=(1) already exists. [Failed SQL: (0) INSERT INTO users (id, name)
+VALUES (1, 'John Doe')]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	... 13 common frames omitted
+Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/002-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Detail: Key (id)=(1) already exists. [Failed SQL: (0) INSERT INTO users (id, name)
+VALUES (1, 'John Doe')]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 20 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/002-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Detail: Key (id)=(1) already exists. [Failed SQL: (0) INSERT INTO users (id, name)
+VALUES (1, 'John Doe')]
+	at liquibase.command.CommandScope.execute(CommandScope.java:258)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1329)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:305)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:257)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:250)
+	... 22 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/002-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Detail: Key (id)=(1) already exists. [Failed SQL: (0) INSERT INTO users (id, name)
+VALUES (1, 'John Doe')]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:148)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:114)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:112)
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:105)
+	at liquibase.command.CommandScope.execute(CommandScope.java:220)
+	... 38 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/changes/002-initial-schema.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Detail: Key (id)=(1) already exists. [Failed SQL: (0) INSERT INTO users (id, name)
+VALUES (1, 'John Doe')]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:820)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:126)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:70)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(ChangeLogIterator.java:131)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(ChangeLogIterator.java:120)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.Scope.child(Scope.java:261)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:89)
+	... 46 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Detail: Key (id)=(1) already exists. [Failed SQL: (0) INSERT INTO users (id, name)
+VALUES (1, 'John Doe')]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:497)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:185)
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:141)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1189)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:776)
+	... 61 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Detail: Key (id)=(1) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:491)
+	... 66 common frames omitted
+2025-01-10 14:02:06 - Starting DemoApplication using Java 21.0.5 with PID 39254 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-10 14:02:06 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-10 14:02:06 - No active profile set, falling back to 1 default profile: "default"
+2025-01-10 14:02:06 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10 14:02:06 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10 14:02:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-10 14:02:06 - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2025-01-10 14:02:06 - Tomcat initialized with port 8080 (http)
+2025-01-10 14:02:06 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-10 14:02:06 - Starting service [Tomcat]
+2025-01-10 14:02:06 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-10 14:02:06 - Initializing Spring embedded WebApplicationContext
+2025-01-10 14:02:06 - Root WebApplicationContext: initialization completed in 728 ms
+2025-01-10 14:02:06 - HikariPool-1 - Starting...
+2025-01-10 14:02:06 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@247c2a9f
+2025-01-10 14:02:06 - HikariPool-1 - Start completed.
+2025-01-10 14:02:07 - Set default schema name to public
+2025-01-10 14:02:07 - Reading from public.databasechangelog
+2025-01-10 14:02:07 - Successfully acquired change log lock
+2025-01-10 14:02:07 - Using deploymentId: 6492527278
+2025-01-10 14:02:07 - Reading from public.databasechangelog
+2025-01-10 14:02:07 - Running Changeset: db/changelog/changes/002-initial-schema.sql::raw::includeAll
+2025-01-10 14:02:07 - Custom SQL executed
+2025-01-10 14:02:07 - ChangeSet db/changelog/changes/002-initial-schema.sql::raw::includeAll ran successfully in 34ms
+2025-01-10 14:02:07 - UPDATE SUMMARY
+2025-01-10 14:02:07 - Run:                          1
+2025-01-10 14:02:07 - Previously run:               1
+2025-01-10 14:02:07 - Filtered out:                 0
+2025-01-10 14:02:07 - -------------------------------
+2025-01-10 14:02:07 - Total change sets:            2
+2025-01-10 14:02:07 - Update summary generated
+2025-01-10 14:02:07 - Update command completed successfully.
+2025-01-10 14:02:07 - Liquibase: Update has been successful. Rows affected: 2
+2025-01-10 14:02:07 - Successfully released change log lock
+2025-01-10 14:02:07 - Command execution complete
+2025-01-10 14:02:07 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-10 14:02:07 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-10 14:02:07 - HHH000026: Second-level cache disabled
+2025-01-10 14:02:07 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-10 14:02:07 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-10 14:02:07 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-10 14:02:07 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-10 14:02:08 - SQL Warning Code: 0, SQLState: 00000
+2025-01-10 14:02:08 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-10 14:02:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-10 14:02:08 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-10 14:02:08 - LiveReload server is running on port 35729
+2025-01-10 14:02:08 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-10 14:02:08 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-10 14:02:08 - Started DemoApplication in 2.966 seconds (process running for 3.256)
+2025-01-10 14:03:01 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-10 14:03:01 - Graceful shutdown complete
+2025-01-10 14:03:01 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-10 14:03:01 - HikariPool-1 - Shutdown initiated...
+2025-01-10 14:03:01 - HikariPool-1 - Shutdown completed.
+2025-01-10 14:03:03 - Starting DemoApplication using Java 21.0.5 with PID 44818 (/Users/RA5457/Downloads/demo/build/classes/java/main started by RA5457 in /Users/RA5457/Downloads/demo)
+2025-01-10 14:03:03 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-10 14:03:03 - No active profile set, falling back to 1 default profile: "default"
+2025-01-10 14:03:03 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10 14:03:03 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10 14:03:03 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-10 14:03:03 - Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2025-01-10 14:03:03 - Tomcat initialized with port 8080 (http)
+2025-01-10 14:03:03 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-10 14:03:03 - Starting service [Tomcat]
+2025-01-10 14:03:03 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-10 14:03:03 - Initializing Spring embedded WebApplicationContext
+2025-01-10 14:03:03 - Root WebApplicationContext: initialization completed in 907 ms
+2025-01-10 14:03:04 - HikariPool-1 - Starting...
+2025-01-10 14:03:04 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22429cc6
+2025-01-10 14:03:04 - HikariPool-1 - Start completed.
+2025-01-10 14:03:04 - Set default schema name to public
+2025-01-10 14:03:04 - Reading from public.databasechangelog
+2025-01-10 14:03:04 - Database is up to date, no changesets to execute
+2025-01-10 14:03:04 - Reading from public.databasechangelog
+2025-01-10 14:03:04 - UPDATE SUMMARY
+2025-01-10 14:03:04 - Run:                          0
+2025-01-10 14:03:04 - Previously run:               2
+2025-01-10 14:03:04 - Filtered out:                 0
+2025-01-10 14:03:04 - -------------------------------
+2025-01-10 14:03:04 - Total change sets:            2
+2025-01-10 14:03:04 - Update summary generated
+2025-01-10 14:03:04 - Command execution complete
+2025-01-10 14:03:04 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-10 14:03:04 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-10 14:03:04 - HHH000026: Second-level cache disabled
+2025-01-10 14:03:04 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-10 14:03:04 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-10 14:03:04 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-10 14:03:04 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-10 14:03:05 - SQL Warning Code: 0, SQLState: 00000
+2025-01-10 14:03:05 - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2025-01-10 14:03:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-10 14:03:05 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-10 14:03:05 - LiveReload server is running on port 35729
+2025-01-10 14:03:05 - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-10 14:03:05 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-10 14:03:05 - Started DemoApplication in 2.733 seconds (process running for 3.005)
+2025-01-10 14:03:31 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-10 14:03:31 - Graceful shutdown complete
+2025-01-10 14:03:31 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-10 14:03:31 - HikariPool-1 - Shutdown initiated...
+2025-01-10 14:03:31 - HikariPool-1 - Shutdown completed.
