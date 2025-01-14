@@ -4,6 +4,7 @@ import com.example.demo.dto.ApiResponse;
 import com.example.demo.dto.UserDTO;
 import com.example.demo.entity.User;
 import com.example.demo.service.UserService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -23,7 +24,7 @@ public class UserController {
 
 
     @PostMapping
-    public ResponseEntity<ApiResponse<UserDTO>> createUser(@RequestBody UserDTO user) {
+    public ResponseEntity<ApiResponse<UserDTO>> createUser(@RequestBody @Valid UserDTO user) {
         UserDTO savedUser = userService.saveUser(user);
 
         try {
@@ -80,7 +81,7 @@ public class UserController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<ApiResponse<UserDTO>> updateUserByID(@PathVariable Long id, @RequestBody UserDTO userDetails) {
+    public ResponseEntity<ApiResponse<UserDTO>> updateUserByID(@PathVariable Long id, @RequestBody @Valid UserDTO userDetails) {
 
         try {
             UserDTO updateUser = userService.updateUser(id, userDetails);
