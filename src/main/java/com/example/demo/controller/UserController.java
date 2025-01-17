@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/users")
@@ -58,7 +59,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<ApiResponse<UserDTO>> getByUserID(@PathVariable Long id) {
+    public ResponseEntity<ApiResponse<UserDTO>> getByUserID(@PathVariable UUID id) {
         Optional<UserDTO> user = userService.getUserByID(id);
 
         if (user.isPresent()) {
@@ -81,7 +82,7 @@ public class UserController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<ApiResponse<UserDTO>> updateUserByID(@PathVariable Long id, @RequestBody @Valid UserDTO userDetails) {
+    public ResponseEntity<ApiResponse<UserDTO>> updateUserByID(@PathVariable UUID id, @RequestBody @Valid UserDTO userDetails) {
 
         try {
             UserDTO updateUser = userService.updateUser(id, userDetails);
@@ -106,7 +107,7 @@ public class UserController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<ApiResponse<Void>> deleteUser(@PathVariable Long id) {
+    public ResponseEntity<ApiResponse<Void>> deleteUser(@PathVariable UUID id) {
 
         if (userService.getUserByID(id).isPresent()) {
             userService.deleteUser(id);

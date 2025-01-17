@@ -8,11 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
+import java.util.UUID;
 
 @Service
 public class UserService {
@@ -23,19 +23,23 @@ public class UserService {
     @Autowired
     private ModelMapper modelMapper;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
     public UserDTO saveUser(UserDTO userDTO) {
         User user = modelMapper.map(userDTO, User.class);
+        user.setPassword(passwordEncoder.encode("12345678"));
         User savedUser = userRepository.save(user);
         return modelMapper.map(savedUser, UserDTO.class);
     }
 
-    public UserDTO updateUser(Long id, UserDTO userDetails) {
+    public UserDTO updateUser(UUID id, UserDTO userDetails) {
         try {
             Optional<User> user = userRepository.findById(id);
 
             if (user.isPresent()) {
                 User existingUser = user.get();
-                existingUser.setName(userDetails.getName());
+                existingUser.setUsername(userDetails.getUsername());
                 existingUser.setEmail(userDetails.getEmail());
                 User updateUser = userRepository.save(existingUser);
                 return modelMapper.map(updateUser, UserDTO.class);
@@ -54,13 +58,29 @@ public class UserService {
                 map(user -> modelMapper.map(user, UserDTO.class));
     }
 
-    public Optional<UserDTO> getUserByID(Long id) {
+    public Optional<UserDTO> getUserByID(UUID id) {
         Optional<User> user = userRepository.findById(id);
 
         return Optional.ofNullable(modelMapper.map(user, UserDTO.class));
     }
 
-    public void deleteUser(Long id) {
+    public void deleteUser(UUID id) {
         userRepository.deleteById(id);
+    }
+
+    public Optional<UserDTO> getUserByName(String username) {
+        Optional<User> user = Optional.ofNullable(userRepository.findByUsername(username));
+
+        return Optional.ofNullable(modelMapper.map(user, UserDTO.class));
+    }
+
+    public User login(String username, String password) {
+        User user = userRepository.findByUsername(username);
+
+        if (user != null && passwordEncoder.matches(password, user.getPassword())) {
+            return user;
+        }
+
+        throw new RuntimeException("Invalid username or password");
     }
 }
