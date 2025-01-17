@@ -3,3 +3,9 @@ databaseChangeLog:
       file: classpath:/db/changelog/changes/001-initial-schema.sql
   - include:
       file: classpath:/db/changelog/changes/002-initial-schema.sql
+  - include:
+      file: classpath:/db/changelog/changes/003-update-table-users.sql
+  - include:
+      file: classpath:/db/changelog/changes/004-update-table-users.sql
+  - include:
+      file: classpath:/db/changelog/changes/005-update-table-users-id.sql
