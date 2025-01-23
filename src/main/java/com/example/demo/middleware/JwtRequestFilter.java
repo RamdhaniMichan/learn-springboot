@@ -1,6 +1,7 @@
 package com.example.demo.middleware;
 
 import com.example.demo.utility.JwtUtil;
+import io.jsonwebtoken.security.SignatureException;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -23,15 +24,20 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String authorizationHeader = request.getHeader("Authorization");
 
-        if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
-            String token = authorizationHeader.substring(7);
-            String username = jwtUtil.extractUsername(token);
+        try {
+            if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
+                String token = authorizationHeader.substring(7);
 
-            if (username != null && jwtUtil.isTokenValid(username, token)) {
-                SecurityContextHolder.getContext().setAuthentication(
-                        new UsernamePasswordAuthenticationToken(username, null, null)
-                );
+                String username = jwtUtil.extractUsername(token);
+
+                if (username != null && jwtUtil.isTokenValid(username, token)) {
+                    SecurityContextHolder.getContext().setAuthentication(
+                            new UsernamePasswordAuthenticationToken(username, null, null)
+                    );
+                }
             }
+        } catch (SecurityException | SignatureException ex) {
+            throw new SecurityException(ex.getMessage());
         }
         filterChain.doFilter(request, response);
     }
