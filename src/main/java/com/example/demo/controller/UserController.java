@@ -17,20 +17,20 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/api/v1")
 public class UserController {
 
     @Autowired
     private UserService userService;
 
 
-    @PostMapping
+    @PostMapping("/user")
     public ResponseEntity<ApiResponse<UserDTO>> createUser(@RequestBody @Valid UserDTO user) {
         UserDTO savedUser = userService.saveUser(user);
 
         try {
             ApiResponse<UserDTO> response = new ApiResponse<>(
-                    "Success Retrieve Data",
+                    ApiResponse.success,
                     201,
                     savedUser
             );
@@ -46,25 +46,25 @@ public class UserController {
         }
     }
 
-    @GetMapping
+    @GetMapping("/users")
     public ResponseEntity<ApiResponse<Page<UserDTO>>> getAllUsers(Pageable pageable) {
         Page<UserDTO> users = userService.getAllUsers(pageable);
 
         ApiResponse<Page<UserDTO>> response = new ApiResponse<>(
-                "Success Retrieve Data",
+                ApiResponse.success,
                 200,
                 users
         );
         return ResponseEntity.ok(response);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/user/{id}")
     public ResponseEntity<ApiResponse<UserDTO>> getByUserID(@PathVariable UUID id) {
         Optional<UserDTO> user = userService.getUserByID(id);
 
         if (user.isPresent()) {
             ApiResponse<UserDTO> response = new ApiResponse<>(
-                    "Success Retrieve Data",
+                    ApiResponse.success,
                     200,
                     user.get()
             );
@@ -72,7 +72,7 @@ public class UserController {
             return ResponseEntity.ok(response);
         } else {
             ApiResponse<UserDTO> response = new ApiResponse<>(
-                    "User Not Found",
+                    ApiResponse.userNotFound,
                     404,
                     null
             );
@@ -81,14 +81,14 @@ public class UserController {
         }
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/user/{id}")
     public ResponseEntity<ApiResponse<UserDTO>> updateUserByID(@PathVariable UUID id, @RequestBody @Valid UserDTO userDetails) {
 
         try {
             UserDTO updateUser = userService.updateUser(id, userDetails);
 
             ApiResponse<UserDTO> response = new ApiResponse<>(
-                    "Success Update Data",
+                    ApiResponse.success,
                     200,
                     updateUser
             );
@@ -106,13 +106,13 @@ public class UserController {
 
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/user/{id}")
     public ResponseEntity<ApiResponse<Void>> deleteUser(@PathVariable UUID id) {
 
         if (userService.getUserByID(id).isPresent()) {
             userService.deleteUser(id);
             ApiResponse<Void> response = new ApiResponse<>(
-                    "Success Delete Data",
+                    ApiResponse.success,
                     200,
                     null
             );
@@ -121,7 +121,7 @@ public class UserController {
             return ResponseEntity.ok(response);
         } else {
             ApiResponse<Void> response = new ApiResponse<>(
-                    "User Not Found with ID " +id,
+                    ApiResponse.userNotFound +id,
                     404,
                     null
             );
