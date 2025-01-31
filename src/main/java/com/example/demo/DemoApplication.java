@@ -35,6 +35,7 @@ public class DemoApplication {
 		System.setProperty("DB_NAME", dotenv.get("DB_NAME"));
 		System.setProperty("DB_USER", dotenv.get("DB_USER"));
 		System.setProperty("DB_PASSWORD", dotenv.get("DB_PASSWORD"));
+		System.setProperty("SECRET_KEY", dotenv.get("SECRET_KEY"));
 
 		SpringApplication.run(DemoApplication.class, args);
 	}
