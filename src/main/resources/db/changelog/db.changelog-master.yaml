@@ -9,3 +9,13 @@ databaseChangeLog:
       file: classpath:/db/changelog/changes/004-update-table-users.sql
   - include:
       file: classpath:/db/changelog/changes/005-update-table-users-id.sql
+  - include:
+      file: classpath:/db/changelog/changes/006-add-table-role.sql
+  - include:
+      file: classpath:/db/changelog/changes/007-add-table-user-roles.sql
+  - include:
+      file: classpath:/db/changelog/changes/008-add-table-book.sql
+  - include:
+      file: classpath:/db/changelog/changes/009-add-table-catalog.sql
+  - include:
+      file: classpath:/db/changelog/changes/0010-add-table-transaction.sql
