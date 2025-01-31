@@ -9,6 +9,7 @@ import org.springframework.cglib.core.Local;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.Set;
 import java.util.UUID;
 
 @Entity
@@ -71,4 +72,7 @@ public class User {
     private LocalDateTime updated_at;
 
     private LocalDateTime deleted_at;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<UserRole> userRoles;
 }

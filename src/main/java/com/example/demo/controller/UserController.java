@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.dto.ApiResponse;
 import com.example.demo.dto.UserDTO;
+import com.example.demo.dto.UserRequest;
 import com.example.demo.entity.User;
 import com.example.demo.service.UserService;
 import jakarta.validation.Valid;
@@ -25,17 +26,16 @@ public class UserController {
 
 
     @PostMapping("/user")
-    public ResponseEntity<ApiResponse<UserDTO>> createUser(@RequestBody @Valid UserDTO user) {
-        UserDTO savedUser = userService.saveUser(user);
-
+    public ResponseEntity<ApiResponse<UserDTO>> createUser(@RequestBody @Valid UserRequest user) {
         try {
+            UserDTO savedUser = userService.saveUser(user);
             ApiResponse<UserDTO> response = new ApiResponse<>(
                     ApiResponse.success,
                     201,
                     savedUser
             );
             return ResponseEntity.ok(response);
-        } catch (Exception e) {
+        } catch (RuntimeException e) {
             ApiResponse<UserDTO> response = new ApiResponse<>(
                     e.getMessage(),
                     400,

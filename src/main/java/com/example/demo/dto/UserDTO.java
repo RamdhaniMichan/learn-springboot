@@ -1,22 +1,22 @@
 package com.example.demo.dto;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 
+import java.util.List;
 import java.util.UUID;
 
-@Getter
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class UserDTO {
 
     private UUID id;
 
-    @NotBlank(message = "name must be required")
     private String username;
 
-    @Email(message = "email should be valid")
     private String email;
+
+    private List<RoleDTO> roles;
 }
