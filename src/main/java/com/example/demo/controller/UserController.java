@@ -29,20 +29,10 @@ public class UserController {
     public ResponseEntity<ApiResponse<UserDTO>> createUser(@RequestBody @Valid UserRequest user) {
         try {
             UserDTO savedUser = userService.saveUser(user);
-            ApiResponse<UserDTO> response = new ApiResponse<>(
-                    ApiResponse.success,
-                    201,
-                    savedUser
-            );
-            return ResponseEntity.ok(response);
-        } catch (RuntimeException e) {
-            ApiResponse<UserDTO> response = new ApiResponse<>(
-                    e.getMessage(),
-                    400,
-                    null
-            );
 
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+            return ResponseEntity.ok(ApiResponse.success(ApiResponse.success, 200, savedUser));
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ApiResponse.error(e.getMessage(), 400));
         }
     }
 
@@ -50,35 +40,14 @@ public class UserController {
     public ResponseEntity<ApiResponse<Page<UserDTO>>> getAllUsers(Pageable pageable) {
         Page<UserDTO> users = userService.getAllUsers(pageable);
 
-        ApiResponse<Page<UserDTO>> response = new ApiResponse<>(
-                ApiResponse.success,
-                200,
-                users
-        );
-        return ResponseEntity.ok(response);
+        return ResponseEntity.ok(ApiResponse.success(ApiResponse.success, 200, users));
     }
 
     @GetMapping("/user/{id}")
     public ResponseEntity<ApiResponse<UserDTO>> getByUserID(@PathVariable UUID id) {
         Optional<UserDTO> user = userService.getUserByID(id);
 
-        if (user.isPresent()) {
-            ApiResponse<UserDTO> response = new ApiResponse<>(
-                    ApiResponse.success,
-                    200,
-                    user.get()
-            );
-
-            return ResponseEntity.ok(response);
-        } else {
-            ApiResponse<UserDTO> response = new ApiResponse<>(
-                    ApiResponse.userNotFound,
-                    404,
-                    null
-            );
-
-            return ResponseEntity.status(404).body(response);
-        }
+        return user.map(userDTO -> ResponseEntity.ok(ApiResponse.success(ApiResponse.success, 200, userDTO))).orElseGet(() -> ResponseEntity.status(404).body(ApiResponse.error(ApiResponse.userNotFound, 404)));
     }
 
     @PutMapping("/user/{id}")
@@ -87,21 +56,9 @@ public class UserController {
         try {
             UserDTO updateUser = userService.updateUser(id, userDetails);
 
-            ApiResponse<UserDTO> response = new ApiResponse<>(
-                    ApiResponse.success,
-                    200,
-                    updateUser
-            );
-
-            return ResponseEntity.ok(response);
+            return ResponseEntity.ok(ApiResponse.success(ApiResponse.success, 200, updateUser));
         } catch (RuntimeException e) {
-            ApiResponse<UserDTO> response = new ApiResponse<>(
-                    e.getMessage(),
-                    400,
-                    null
-            );
-
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ApiResponse.error(e.getMessage(), 400));
         }
 
     }
@@ -111,22 +68,10 @@ public class UserController {
 
         if (userService.getUserByID(id).isPresent()) {
             userService.deleteUser(id);
-            ApiResponse<Void> response = new ApiResponse<>(
-                    ApiResponse.success,
-                    200,
-                    null
-            );
 
-
-            return ResponseEntity.ok(response);
+            return ResponseEntity.ok(ApiResponse.success(ApiResponse.success, 200, null));
         } else {
-            ApiResponse<Void> response = new ApiResponse<>(
-                    ApiResponse.userNotFound +id,
-                    404,
-                    null
-            );
-
-            return ResponseEntity.status(404).body(response);
+            return ResponseEntity.status(404).body(ApiResponse.error(ApiResponse.userNotFound +id, 404));
         }
     }
 

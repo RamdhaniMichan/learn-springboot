@@ -18,4 +18,12 @@ public class ApiResponse<T> {
         this.code = code;
         this.data = data;
     }
+
+    public static <T> ApiResponse<T> success(String message, int code, T data) {
+        return new ApiResponse<>(message, code, data);
+    }
+
+    public static <T> ApiResponse<T> error(String message, int code) {
+        return new ApiResponse<>(message, code, null);
+    }
 }
