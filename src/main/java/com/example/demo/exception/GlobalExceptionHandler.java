@@ -4,9 +4,11 @@ import com.example.demo.dto.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
+import org.springframework.web.HttpMediaTypeException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.servlet.resource.NoResourceFoundException;
 
 import java.util.HashMap;
@@ -19,6 +21,22 @@ public class GlobalExceptionHandler {
     public ResponseEntity<Object> handlerNoHandleFound(NoResourceFoundException ex) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ErrorResponse(
            "path not found",
+                ex.getMessage()
+        ));
+    }
+
+    @ExceptionHandler(MethodArgumentTypeMismatchException.class)
+    public ResponseEntity<Object> handlerMismatchType(MethodArgumentTypeMismatchException ex) {
+        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(new ErrorResponse(
+                HttpStatus.UNPROCESSABLE_ENTITY.name(),
+                ex.getMessage()
+        ));
+    }
+
+    @ExceptionHandler(HttpMediaTypeException.class)
+    public ResponseEntity<Object> handlerMismatchType(HttpMediaTypeException ex) {
+        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(new ErrorResponse(
+                HttpStatus.UNPROCESSABLE_ENTITY.name(),
                 ex.getMessage()
         ));
     }
