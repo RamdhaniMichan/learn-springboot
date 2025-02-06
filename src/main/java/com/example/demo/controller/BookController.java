@@ -2,7 +2,9 @@ package com.example.demo.controller;
 
 import com.example.demo.dto.ApiResponse;
 import com.example.demo.dto.BookDTO;
+import com.example.demo.dto.BookRequest;
 import com.example.demo.service.BookService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -31,32 +33,41 @@ public class BookController {
     }
 
     @GetMapping("/books")
-    public ResponseEntity<ApiResponse<Page<BookDTO>>> getAllBook(Pageable pageable) {
-        Page<BookDTO> book = bookService.getAllBook(pageable);
+    public ResponseEntity<ApiResponse<Page<BookDTO>>> getAllBook(
+            Pageable pageable,
+            @RequestParam(required = false) String title,
+            @RequestParam(required = false) String genre
+    ) {
+        Page<BookDTO> book = bookService.getAllBook(pageable, title, genre);
         return ResponseEntity.ok(ApiResponse.success(ApiResponse.success, 200, book));
     }
 
     @PostMapping("/book")
-    public ResponseEntity<ApiResponse<BookDTO>> createBook(BookDTO bookDTO) {
-        if (bookDTO.getImage().getSize() > 10 * 1024 * 1024) { // batas ukuran file 10MB
+    public ResponseEntity<ApiResponse<BookDTO>> createBook(@Valid BookRequest bookRequest) {
+        if (bookRequest.getImage().isEmpty()) {
+            return ResponseEntity.status(400)
+                    .body(ApiResponse.error("File is empty!", 400));
+        }
+
+        if (bookRequest.getImage().getSize() > 10 * 1024 * 1024) { // batas ukuran file 10MB
             return ResponseEntity.status(400)
                     .body(ApiResponse.error("File size exceeds the limit", 400));
         }
 
-        if (bookDTO.getImage().getSize() > 10 * 1024 * 1024) {
+        if (bookRequest.getImage().getSize() > 10 * 1024 * 1024) {
             return ResponseEntity.status(400)
                     .body(ApiResponse.error("Only image files are allowed", 400));
         }
 
-        BookDTO savedBook = bookService.saveBook(bookDTO);
+        BookDTO savedBook = bookService.saveBook(bookRequest);
 
         return ResponseEntity.ok(ApiResponse.success(ApiResponse.success, 200, savedBook));
     }
 
     @PutMapping("/book/{id}")
-    public ResponseEntity<ApiResponse<BookDTO>> updateBook(@PathVariable UUID id, @RequestBody BookDTO bookDTO) {
+    public ResponseEntity<ApiResponse<BookDTO>> updateBook(@PathVariable UUID id, @Valid BookRequest bookRequest) {
         try {
-            BookDTO updatedBook = bookService.updateBook(bookDTO, id);
+            BookDTO updatedBook = bookService.updateBook(bookRequest, id);
 
             return ResponseEntity.ok(ApiResponse.success(ApiResponse.success, 200, updatedBook));
         } catch (RuntimeException e) {

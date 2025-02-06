@@ -1,14 +1,19 @@
 package com.example.demo.service;
 
 import com.example.demo.dto.BookDTO;
+import com.example.demo.dto.BookRequest;
 import com.example.demo.entity.Book;
 import com.example.demo.repository.BookRepository;
+import com.example.demo.service.specification.BookSpecification;
 import com.example.demo.storage.MinioService;
+import com.example.demo.utility.BeanUtilsHelper;
 import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -28,31 +33,27 @@ public class BookService implements BookServiceInt {
 
     @Override
     @Transactional
-    public BookDTO saveBook(BookDTO bookDTO) {
+    public BookDTO saveBook(BookRequest bookRequest) {
         try {
-            minioService.uploadFile(bookDTO.getImage().getOriginalFilename(), bookDTO.getImage());
+            minioService.uploadFile(bookRequest.getImage().getOriginalFilename(), bookRequest.getImage());
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
 
-        Book book = modelMapper.map(bookDTO, Book.class);
-        book.setImage(bookDTO.getImage().getOriginalFilename());
+        Book book = modelMapper.map(bookRequest, Book.class);
+        book.setImage(bookRequest.getImage().getOriginalFilename());
         Book savedBook = bookRepository.save(book);
-        savedBook.setImage(bookDTO.getImage().getOriginalFilename());
+        savedBook.setImage(bookRequest.getImage().getOriginalFilename());
         return modelMapper.map(savedBook, BookDTO.class);
     }
 
     @Override
-    public BookDTO updateBook(BookDTO bookDTO, UUID id) {
+    public BookDTO updateBook(BookRequest bookRequest, UUID id) {
         Optional<Book> book = bookRepository.findById(id);
 
         if (book.isPresent()) {
             Book existingBook = book.get();
-            existingBook.setAuthor(bookDTO.getAuthor());
-            existingBook.setGenre(bookDTO.getGenre());
-            existingBook.setImage(bookDTO.getImage().getOriginalFilename());
-            existingBook.setTitle(bookDTO.getTitle());
-            existingBook.setDate_publish(bookDTO.getDate_publish());
+            BeanUtils.copyProperties(bookRequest, existingBook, BeanUtilsHelper.getNullPropertyNames(bookRequest));
             Book updatedBook = bookRepository.save(existingBook);
             return modelMapper.map(updatedBook, BookDTO.class);
         } else {
@@ -64,11 +65,24 @@ public class BookService implements BookServiceInt {
     public BookDTO getBookByID(UUID id) {
         Optional<Book> book = bookRepository.findById(id);
 
-        return modelMapper.map(book, BookDTO.class);
+        if (book.isPresent()) {
+            try {
+                Book getBook = book.get();
+                String url = minioService.getPresignedUrl(getBook.getImage());
+                getBook.setImage(url);
+                return modelMapper.map(getBook, BookDTO.class);
+
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        return null;
     }
 
     @Override
-    public Page<BookDTO> getAllBook(Pageable pageable) {
+    public Page<BookDTO> getAllBook(Pageable pageable, String title, String genre) {
+        Specification<Book> spec = BookSpecification.withFilters(title, genre);
         return bookRepository.findAll(pageable)
                 .map(book -> modelMapper.map(book, BookDTO.class));
     }

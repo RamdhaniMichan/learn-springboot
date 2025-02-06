@@ -11,8 +11,8 @@ import java.util.UUID;
 
 public interface UserServiceInt {
     UserDTO saveUser(UserRequest userRequest);
-    UserDTO updateUser(UUID id, UserDTO userDetails);
-    Page<UserDTO> getAllUsers(Pageable pageable);
+    UserDTO updateUser(UUID id, UserRequest userDetails);
+    Page<UserDTO> getAllUsers(Pageable pageable, String username, String email);
     Optional<UserDTO> getUserByID(UUID id);
     void deleteUser(UUID id);
     Optional<UserDTO> getUserByName(String username);

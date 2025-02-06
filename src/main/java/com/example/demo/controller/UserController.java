@@ -37,8 +37,12 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    public ResponseEntity<ApiResponse<Page<UserDTO>>> getAllUsers(Pageable pageable) {
-        Page<UserDTO> users = userService.getAllUsers(pageable);
+    public ResponseEntity<ApiResponse<Page<UserDTO>>> getAllUsers(
+            Pageable pageable,
+            @RequestParam(required = false) String username,
+            @RequestParam(required = false) String email
+    ) {
+        Page<UserDTO> users = userService.getAllUsers(pageable, username, email);
 
         return ResponseEntity.ok(ApiResponse.success(ApiResponse.success, 200, users));
     }
@@ -51,7 +55,7 @@ public class UserController {
     }
 
     @PutMapping("/user/{id}")
-    public ResponseEntity<ApiResponse<UserDTO>> updateUserByID(@PathVariable UUID id, @RequestBody @Valid UserDTO userDetails) {
+    public ResponseEntity<ApiResponse<UserDTO>> updateUserByID(@PathVariable UUID id, @RequestBody @Valid UserRequest userDetails) {
 
         try {
             UserDTO updateUser = userService.updateUser(id, userDetails);

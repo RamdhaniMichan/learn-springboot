@@ -6,14 +6,18 @@ import com.example.demo.entity.Role;
 import com.example.demo.entity.UserRole;
 import com.example.demo.repository.RoleRepository;
 import com.example.demo.repository.UserRoleRepository;
+import com.example.demo.service.specification.UserSpecification;
+import com.example.demo.utility.BeanUtilsHelper;
 import org.modelmapper.ModelMapper;
 import com.example.demo.dto.UserDTO;
 import com.example.demo.entity.User;
 import com.example.demo.repository.UserRepository;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -67,14 +71,13 @@ public class UserService implements UserServiceInt {
         return modelMapper.map(savedUser, UserDTO.class);
     }
 
-    public UserDTO updateUser(UUID id, UserDTO userDetails) {
+    public UserDTO updateUser(UUID id, UserRequest userDetails) {
         try {
             Optional<User> user = userRepository.findById(id);
 
             if (user.isPresent()) {
                 User existingUser = user.get();
-                existingUser.setUsername(userDetails.getUsername());
-                existingUser.setEmail(userDetails.getEmail());
+                BeanUtils.copyProperties(userDetails, existingUser, BeanUtilsHelper.getNullPropertyNames(userDetails));
                 User updateUser = userRepository.save(existingUser);
                 return modelMapper.map(updateUser, UserDTO.class);
             } else {
@@ -87,8 +90,9 @@ public class UserService implements UserServiceInt {
         }
     }
 
-    public Page<UserDTO> getAllUsers(Pageable pageable) {
-        return userRepository.findAll(pageable)
+    public Page<UserDTO> getAllUsers(Pageable pageable, String username, String email) {
+        Specification<User> spec = UserSpecification.withFilters(username, email);
+        return userRepository.findAll(spec, pageable)
                         .map(user -> {
                             UserDTO userDTO = modelMapper.map(user, UserDTO.class);
                             userDTO.setRoles(user.getUserRoles().stream()
