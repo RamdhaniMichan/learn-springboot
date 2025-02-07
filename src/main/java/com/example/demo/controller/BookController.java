@@ -35,10 +35,9 @@ public class BookController {
     @GetMapping("/books")
     public ResponseEntity<ApiResponse<Page<BookDTO>>> getAllBook(
             Pageable pageable,
-            @RequestParam(required = false) String title,
-            @RequestParam(required = false) String genre
+            @RequestParam(required = false) String q
     ) {
-        Page<BookDTO> book = bookService.getAllBook(pageable, title, genre);
+        Page<BookDTO> book = bookService.getAllBook(pageable, q);
         return ResponseEntity.ok(ApiResponse.success(ApiResponse.success, 200, book));
     }
 

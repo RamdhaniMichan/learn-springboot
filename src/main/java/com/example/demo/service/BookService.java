@@ -3,6 +3,7 @@ package com.example.demo.service;
 import com.example.demo.dto.BookDTO;
 import com.example.demo.dto.BookRequest;
 import com.example.demo.entity.Book;
+import com.example.demo.entity.User;
 import com.example.demo.repository.BookRepository;
 import com.example.demo.service.specification.BookSpecification;
 import com.example.demo.storage.MinioService;
@@ -16,6 +17,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -49,7 +51,7 @@ public class BookService implements BookServiceInt {
 
     @Override
     public BookDTO updateBook(BookRequest bookRequest, UUID id) {
-        Optional<Book> book = bookRepository.findById(id);
+        Optional<Book> book = bookRepository.findByIdAndDeletedAtIsNull(id);
 
         if (book.isPresent()) {
             Book existingBook = book.get();
@@ -63,7 +65,7 @@ public class BookService implements BookServiceInt {
 
     @Override
     public BookDTO getBookByID(UUID id) {
-        Optional<Book> book = bookRepository.findById(id);
+        Optional<Book> book = bookRepository.findByIdAndDeletedAtIsNull(id);
 
         if (book.isPresent()) {
             try {
@@ -81,15 +83,22 @@ public class BookService implements BookServiceInt {
     }
 
     @Override
-    public Page<BookDTO> getAllBook(Pageable pageable, String title, String genre) {
-        Specification<Book> spec = BookSpecification.withFilters(title, genre);
-        return bookRepository.findAll(pageable)
+    public Page<BookDTO> getAllBook(Pageable pageable, String q) {
+        Specification<Book> spec = BookSpecification.withFilters(q);
+        return bookRepository.findAll(spec, pageable)
                 .map(book -> modelMapper.map(book, BookDTO.class));
     }
 
     @Override
     public BookDTO deleteBookByID(UUID id) {
-        bookRepository.deleteById(id);
-        return null;
+        Optional<Book> book = bookRepository.findByIdAndDeletedAtIsNull(id);
+        if (book.isPresent()) {
+            Book exisitingBook = book.get();
+            exisitingBook.setDeleted_at(LocalDateTime.now());
+            bookRepository.save(exisitingBook);
+            return null;
+        }
+
+        throw new RuntimeException("Book not found");
     }
 }

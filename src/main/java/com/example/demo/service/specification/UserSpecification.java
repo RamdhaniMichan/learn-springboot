@@ -9,18 +9,20 @@ import java.util.List;
 
 public class UserSpecification {
 
-    public static Specification<User> withFilters(String username, String email) {
+    public static Specification<User> withFilters(String q) {
         return ((root, query, criteriaBuilder) -> {
             List<Predicate> predicates = new ArrayList<>();
 
-            if (username != null) {
-                predicates.add(criteriaBuilder
-                        .like(criteriaBuilder.lower(root.get("username")), "%" + username.toLowerCase() + "%"));
-            }
+            predicates.add(criteriaBuilder.isNull(root.get("deleted_at")));
 
-            if (email != null) {
-                predicates.add(criteriaBuilder
-                        .like(criteriaBuilder.lower(root.get("email")), "%" + email.toLowerCase() + "%"));
+            if (q != null) {
+                Predicate usernamePredicate = criteriaBuilder
+                        .like(criteriaBuilder.lower(root.get("username")), "%" + q.toLowerCase() + "%");
+
+                Predicate emailPredicate = criteriaBuilder
+                        .like(criteriaBuilder.lower(root.get("email")), "%" + q.toLowerCase() + "%");
+
+                predicates.add(criteriaBuilder.or(usernamePredicate, emailPredicate));
             }
 
             return criteriaBuilder.and(predicates.toArray(new Predicate[0]));

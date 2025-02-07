@@ -11,6 +11,6 @@ public interface BookServiceInt {
     BookDTO saveBook(BookRequest bookRequest);
     BookDTO updateBook(BookRequest bookRequest, UUID id);
     BookDTO getBookByID(UUID id);
-    Page<BookDTO> getAllBook(Pageable pageable, String title, String genre);
+    Page<BookDTO> getAllBook(Pageable pageable, String q);
     BookDTO deleteBookByID(UUID id);
 }

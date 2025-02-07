@@ -39,10 +39,9 @@ public class UserController {
     @GetMapping("/users")
     public ResponseEntity<ApiResponse<Page<UserDTO>>> getAllUsers(
             Pageable pageable,
-            @RequestParam(required = false) String username,
-            @RequestParam(required = false) String email
+            @RequestParam(required = false) String q
     ) {
-        Page<UserDTO> users = userService.getAllUsers(pageable, username, email);
+        Page<UserDTO> users = userService.getAllUsers(pageable, q);
 
         return ResponseEntity.ok(ApiResponse.success(ApiResponse.success, 200, users));
     }

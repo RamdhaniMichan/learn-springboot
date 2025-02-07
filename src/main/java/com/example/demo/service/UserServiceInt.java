@@ -12,7 +12,7 @@ import java.util.UUID;
 public interface UserServiceInt {
     UserDTO saveUser(UserRequest userRequest);
     UserDTO updateUser(UUID id, UserRequest userDetails);
-    Page<UserDTO> getAllUsers(Pageable pageable, String username, String email);
+    Page<UserDTO> getAllUsers(Pageable pageable, String q);
     Optional<UserDTO> getUserByID(UUID id);
     void deleteUser(UUID id);
     Optional<UserDTO> getUserByName(String username);

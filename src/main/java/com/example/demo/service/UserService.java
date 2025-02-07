@@ -22,6 +22,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -73,7 +74,7 @@ public class UserService implements UserServiceInt {
 
     public UserDTO updateUser(UUID id, UserRequest userDetails) {
         try {
-            Optional<User> user = userRepository.findById(id);
+            Optional<User> user = userRepository.findByIdAndDeletedAtIsNull(id);
 
             if (user.isPresent()) {
                 User existingUser = user.get();
@@ -90,8 +91,8 @@ public class UserService implements UserServiceInt {
         }
     }
 
-    public Page<UserDTO> getAllUsers(Pageable pageable, String username, String email) {
-        Specification<User> spec = UserSpecification.withFilters(username, email);
+    public Page<UserDTO> getAllUsers(Pageable pageable, String q) {
+        Specification<User> spec = UserSpecification.withFilters(q);
         return userRepository.findAll(spec, pageable)
                         .map(user -> {
                             UserDTO userDTO = modelMapper.map(user, UserDTO.class);
@@ -103,7 +104,7 @@ public class UserService implements UserServiceInt {
     }
 
     public Optional<UserDTO> getUserByID(UUID id) {
-        Optional<User> user = userRepository.findById(id);
+        Optional<User> user = userRepository.findByIdAndDeletedAtIsNull(id);
 
         return user.map(userDetail -> {
             UserDTO userDTO = modelMapper.map(userDetail, UserDTO.class);
@@ -115,7 +116,16 @@ public class UserService implements UserServiceInt {
     }
 
     public void deleteUser(UUID id) {
-        userRepository.deleteById(id);
+        Optional<User> user = userRepository.findByIdAndDeletedAtIsNull(id);
+
+        if (user.isPresent()) {
+            User existingUser = user.get();
+            existingUser.setDeleted_at(LocalDateTime.now());
+            userRepository.save(existingUser);
+            return;
+        }
+
+        throw new RuntimeException("User not found");
     }
 
     public Optional<UserDTO> getUserByName(String username) {
