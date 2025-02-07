@@ -1,5 +1,7 @@
 package com.example.demo.config;
 
+import com.example.demo.exception.CustomAccessDeniedHandler;
+import com.example.demo.exception.CustomAuthenticationEntryPoint;
 import com.example.demo.middleware.JwtRequestFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -36,14 +38,21 @@ public class SecurityConfig {
     }
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain securityFilterChain(
+            HttpSecurity http,
+            CustomAuthenticationEntryPoint authenticationEntryPoint,
+            CustomAccessDeniedHandler accessDeniedHandler
+    ) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable)
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/v1/users", "/api/v1/user/**", "/api/v1/auth/login", "/api/v1/books", "/api/v1/book/**").permitAll()
-                        .requestMatchers("/api/auth/hello").authenticated()
                         .requestMatchers("/api/auth/hello").hasAuthority("user")
                         .anyRequest().authenticated()
+                )
+                .exceptionHandling(ex -> ex
+                        .accessDeniedHandler(accessDeniedHandler)
+                        .authenticationEntryPoint(authenticationEntryPoint)
                 )
                 .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 
